@@ -23,6 +23,7 @@ html{
 
 
 header nav{
+    z-index: 1;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -201,6 +202,10 @@ main .profile-img{
     overflow: hidden;
 }
 
+.about2{
+    z-index: -1;
+}
+
 .skills__bar::after {
     content: "";
     position: absolute;
@@ -280,6 +285,8 @@ main .profile-img{
         gap: 1.8rem;
         max-width: 800px;
     }
+
+
 
     .about1{
         max-width: 350px;
