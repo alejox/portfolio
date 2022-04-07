@@ -14,7 +14,7 @@
     <body>
         <!-------------Header------------------------->
     <header>
-        <nav>
+        <nav class="nav-bar">
             <div class="logo_alejo">
                 <img src="./assets/images/alejox.svg">
                 <div class="text">
@@ -23,25 +23,29 @@
             </div>
         <!------------------Menu--------------------------->
 
-            <input type="checkbox" id="menu-hamburger">
-            <label for="menu-hamburger">
-                <img src="./assets/images/íconos/menu.png" alt="">
-            </label>
-
-            <ul>
-                <li>
-                    <a href="#about-me">Sobre mi</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#profile-menu" class="nav-link">INICIO</a>
                 </li>
-                <li>
-                    <a href="#skills">Habilidades</a>
+                <li class="nav-item">
+                    <a href="#about_me-menu" class="nav-link">SOBRE MÍ</a>
                 </li>
-                <li>
-                    <a href="#projects-menu">Proyectos</a>
+                <li class="nav-item">
+                    <a href="#skills-menu" class="nav-link">HABILIDADES</a>
                 </li>
-                <li>
-                    <a href="http://">Contacto</a>
+                <li class="nav-item">
+                    <a href="#projects-menu" class="nav-link">PROYECTOS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact-menu" class="nav-link">CONTACTO</a>
                 </li>
             </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
@@ -51,7 +55,7 @@
 
         <!------------------Profile--------------------------->
 
-        <section class="profile">
+        <section class="profile" id="profile-menu">
             <img  class="profile-img" src="./assets/images/foto_perfil_web.png" alt="Foto Alejandro Developer">
                 <h2 class="title">Hola, mi nombre es Alejandro Grajales, soy desarrollador full stack y diseñador gráfico.</h2>
                 <p class="text">Trabajo en áreas de desorrallo web y diseñano gráfico, brindando asi soluciones practicas y creativas para las empresas.</p>
@@ -65,7 +69,7 @@
 
         <!------------------About--------------------------->
 
-        <section class="about">
+        <section class="about" id="about_me-menu">
             <div class="about-grid">
 
                 <div class="about1">
@@ -85,7 +89,7 @@
 
     <!------------------Skills--------------------------->
 
-                        <div class="skills">
+                        <div class="skills" id="skills-menu">
                                 <div class="skills__item">
                                     <p class="skills__tech">Creatividad</p>
                                     <div class="skills__bar skills__bar--90"></div>
@@ -117,7 +121,7 @@
             </div>
         </section>
 
-        <section class="skills-slider" id="skills">
+        <section class="skills-slider">
             <h2 class="title">Habilidades</h2>
             <div class="slider">
                 <ul>
@@ -156,7 +160,7 @@
 
         </section>
 
-        <section class="contact_me">
+        <section class="contact_me" id="contact-menu">
                 <h2 class="title">Contacto</h2>
                 <p class="text">Si estas en busqueda de un desarrollador fullstack, no dudes en contactarme.</p>
 
@@ -172,4 +176,6 @@
         <p class="text">Diseñado por <strong>Alejandro Developer</strong> - Copyright 2022</p>
     </footer>
     </body>
+    <script src="./assets/js/script.js"></script>
+
 </html>

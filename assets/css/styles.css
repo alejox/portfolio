@@ -4,36 +4,34 @@
     --text-color:#959595;
     --transition: color 0.1s, background-color 0.2s ease-in-out;
     --skills-bar-length:0%;
+    --bg-color:#202020;
+    --seconday-color:#162950;
+    --third-color:#13ADC7;
 }
 
 
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Manrope', sans-serif;
 }
 
 html{
+    box-sizing: border-box;
     font-size: 62.5%;
-    background-color: #202020;
+    background-color: var(--bg-color);
+    scroll-behavior:smooth;
 }
 
 /*-----------------Header-----------------------*/
 
-
-header nav{
+header{
+    position: sticky;
+    top: 0;
     z-index: 1;
-    position: fixed;
+    background-color: var(--bg-color);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:0.5rem 1.25rem ;
-    background-color: rgb(32, 32, 32);
-    height: 60px;
-    width: 100%;
 }
-
 
 nav .logo_alejo{
     width: 30px;
@@ -41,57 +39,89 @@ nav .logo_alejo{
     display: flex;
 }
 
-nav .logo_alejo div {
-    color: rgb(255, 255, 255);
-    font-size: 0.8rem;
-    margin-left: 5px;
-    width: 150px; 
-    display: flex;
-    align-items: center;
-}
 
 nav .logo_alejo h1{
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-left: 10px;
     width: 150px;
-    font-weight: 100;
-}
-
-
-
-nav > label > img{
-    width: 20px;
-}
-
-input#menu-hamburger{
-    visibility: hidden;
-}
-
-input#menu-hamburger~ul{
-
-    background-color: rgb(34, 33, 33);
-    list-style: none;
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 60px);
-    top: 60px;
-    right: 100%;
-    transition: all 400ms ease-in-out;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 2rem 1rem;
+    font-weight: 500;
 }
 
-input#menu-hamburger:checked~ul{
-    right: 0;
+/*---------------------Menu----------------------*/
+
+nav li{
+    list-style: none;
 }
+
+
 
 nav > ul > li > a{
     color: var(--title-color);
     text-decoration: none;
-    font-size: 1.8rem;
+    padding: .5rem 1rem;
+    border-bottom: 1px solid transparent;
+    transition: border-color .3s linear;
+    font-size: 1.2rem;
     font-weight: 100;
+    -webkit-transition: border-color .3s linear;
+    -moz-transition: border-color .3s linear;
+    -ms-transition: border-color .3s linear;
+    -o-transition: border-color .3s linear;
 }
+
+nav > ul > li > a:hover{
+    border-color: var(--third-color);
+}
+
+.nav-bar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    width: 100%;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -ms-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
+}
+
+.nav-link:hover{
+    color: var(--text-color);
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 26px;
+    height: 2px;
+    margin: 6px auto;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    background-color: var(--third-color);
+}
+
+
 
 /*--------------------------Main------------------------*/
 
@@ -162,7 +192,7 @@ main .profile-img{
 }
 
 .button:hover {
-    background: #162950;
+    background:var(--seconday-color);
 }
 
 /*------------------- About me ---------------------------*/
@@ -195,7 +225,7 @@ main .profile-img{
     width: 260px;
     position: relative;
     height: 14px;
-    background-color: #162950;
+    background-color: var(--seconday-color);
     border-radius: 7px;
     overflow: hidden;
 }
@@ -235,43 +265,70 @@ main .profile-img{
 
 
 
+@media(max-width:768px){
 
+    .hamburger{
+        display: block;
+    }
 
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        -webkit-transform: translateY(8px) rotate(45deg);
+        -moz-transform: translateY(8px) rotate(45deg);
+        -ms-transform: translateY(8px) rotate(45deg);
+        -o-transform: translateY(8px) rotate(45deg);
+}
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        -moz-transform: translateY(-8px) rotate(-45deg);
+        -ms-transform: translateY(-8px) rotate(-45deg);
+        -o-transform: translateY(-8px) rotate(-45deg);
+}
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction:column;
+        background-color: var(--bg-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+}
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+}
 
 
 
 @media only screen and (min-width: 600px){
-    label{
-        display: none;
-    }
 
-    nav .logo_alejo div {
-        font-size: 1rem;
-    }
-
-    input#menu-hamburger ~ ul{
-        position: static;
-        background-color: transparent;
-        display: flex;
-        height: auto;
-        justify-content: flex-end;
-        transition: none;
-        flex-direction: row;
-    }
-
-    nav > ul > li{
-        display: inline-block;
-    }
     nav > ul > li > a{
-        color: #ffffff;
+        color: var(--title-color);
         text-decoration: none;
         padding: .5rem 1rem;
-        border-bottom: 2px solid transparent;
+        border-bottom: 1px solid transparent;
         transition: border-color .3s linear;
+        font-size: 1.4rem;
     }
 
     nav > ul > li > a:hover{
-        border-color: #13ADC7;
+        border-color: var(--third-color);
     }
 
     .about-grid{
@@ -281,8 +338,6 @@ main .profile-img{
         gap: 1.8rem;
         max-width: 800px;
     }
-
-
 
     .about1{
         max-width: 350px;
