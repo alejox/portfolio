@@ -21,7 +21,11 @@ html{
     font-size: 62.5%;
     background-color: var(--bg-color);
     scroll-behavior:smooth;
+    width: 100%;
 }
+
+
+
 
 /*-----------------Header-----------------------*/
 
@@ -30,13 +34,20 @@ header{
     top: 0;
     z-index: 1;
     background-color: var(--bg-color);
-    display: flex;
+    width: 100%;
 }
 
+
+
+
+/*---------------------Menu----------------------*/
+
 nav .logo_alejo{
+    display:flex;
+}
+
+nav .logo_alejo img{
     width: 30px;
-    margin-left: 20px;
-    display: flex;
 }
 
 
@@ -44,12 +55,9 @@ nav .logo_alejo h1{
     color: var(--text-color);
     font-size: 1.2rem;
     margin-left: 10px;
-    width: 150px;
-    display: flex;
+    height: auto;
     font-weight: 500;
 }
-
-/*---------------------Menu----------------------*/
 
 nav li{
     list-style: none;
@@ -76,19 +84,19 @@ nav > ul > li > a:hover{
 }
 
 .nav-bar{
-    min-height: 70px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px;
-    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .nav-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
 }
 
 .nav-link{
@@ -127,9 +135,7 @@ nav > ul > li > a:hover{
 
 .main-container{
     max-width: 1200px;
-    min-width: 300px;
-    margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 15px;
 }
 
 /*---------------------Profile---------------------------*/
@@ -222,7 +228,7 @@ main .profile-img{
 
 .skills__bar,
 .skills__bar::after{
-    width: 260px;
+    width: 240px;
     position: relative;
     height: 14px;
     background-color: var(--seconday-color);
@@ -260,6 +266,8 @@ main .profile-img{
         transform: translateX(var(--skills-bar-length));
     }
 }
+
+
 
 /*-------------------- Skills ---------------------------*/
 
@@ -325,6 +333,11 @@ main .profile-img{
         border-bottom: 1px solid transparent;
         transition: border-color .3s linear;
         font-size: 1.4rem;
+        font-weight: 100;
+        -webkit-transition: border-color .3s linear;
+        -moz-transition: border-color .3s linear;
+        -ms-transition: border-color .3s linear;
+        -o-transition: border-color .3s linear;
     }
 
     nav > ul > li > a:hover{
