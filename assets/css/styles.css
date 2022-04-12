@@ -136,6 +136,7 @@ nav > ul > li > a:hover{
 .main-container{
     max-width: 1200px;
     padding: 0 15px;
+    margin: 0 auto;
 }
 
 /*---------------------Profile---------------------------*/
@@ -217,7 +218,7 @@ main .profile-img{
 .skills__item{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .skills__tech{
@@ -238,6 +239,7 @@ main .profile-img{
 
 .about2{
     z-index: -1;
+    margin:0 auto;
 }
 
 .skills__bar::after {
@@ -344,7 +346,7 @@ main .profile-img{
         border-color: var(--third-color);
     }
 
-    .about-grid{
+    .about-flex{
         margin: 20px auto 50px;
         display:flex;
         justify-content: space-between;
@@ -354,6 +356,16 @@ main .profile-img{
 
     .about1{
         max-width: 350px;
+        padding: 0 20px;
+    }
+
+    .about2{
+        margin: 0 auto;
+    }
+
+    .about1 .text{
+        padding: 0 60px;
+        text-align: left;
     }
 
 }
