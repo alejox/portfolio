@@ -32,7 +32,7 @@ html{
 header{
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10;
     background-color: var(--bg-color);
     width: 100%;
 }
@@ -273,9 +273,130 @@ main .profile-img{
 
 /*-------------------- Skills ---------------------------*/
 
+.container-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+
+}
+
+.img-slider{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    background-color: var(--bg-color);
+}
+
+.img-slider .slide{
+    z-index: 1;
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.img-slider .active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+    transition-property: clip-path;
+}
+
+.img-slider .slide img{
+    z-index: 1;
+    width: 100%;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+}
+
+.img-slider .slide .info{
+    position: absolute;
+    top: 0;
+    padding:15px 30px;
+}
+
+.img-slider .navigation{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.img-slider .navigation .btn{
+    background: rgba(255, 255, 255, 0.5);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+
+.img-slider .navigation .active{
+     background: var(--third-color);
+     box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.img-slider .position-item{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
 
 
-@media(max-width:768px){
+
+/*---------------------------Jquery-------------------------------*/
+
+
+
+@media (max-width:768px){
+
+    .img-slider{
+        width: 600px;
+        height: 375px;
+    }
+
+    .img-slider .slide .info{
+        padding: 10px 25px;
+    }
+
+    .img-slider .slide .info{
+        font-size: 35px;
+    }
+
+    .img-slider .navigation{
+        bottom: 25px;
+    }
+
+    .img-slider .navigation .btn{
+        width: 10px;
+        height: 10px;
+        margin: 8px;
+    }
 
     .hamburger{
         display: block;
@@ -291,7 +412,7 @@ main .profile-img{
         -moz-transform: translateY(8px) rotate(45deg);
         -ms-transform: translateY(8px) rotate(45deg);
         -o-transform: translateY(8px) rotate(45deg);
-}
+    }
 
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
@@ -303,7 +424,7 @@ main .profile-img{
     .nav-menu{
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 60px;
         gap: 0;
         flex-direction:column;
         background-color: var(--bg-color);
@@ -323,6 +444,68 @@ main .profile-img{
         left: 0;
     }
 }
+
+@media (max-width:600px){
+
+    .img-slider{
+        width: 400px;
+        height: 250px;
+    }
+
+    .img-slider .slide .info{
+        padding: 10px 20px;
+    }
+
+    .img-slider .slide .info{
+        font-size: 30px;
+    }
+
+    .img-slider .navigation{
+        bottom: 15px;
+    }
+
+    .img-slider .navigation .btn{
+        width: 8px;
+        height: 8px;
+        margin: 6px;
+    }
+
+}
+
+@media (max-width:420px){
+
+    .img-slider{
+        width: 320px;
+        height: 200px;
+    }
+
+    .img-slider .slide .info{
+        padding: 5px 10px;
+    }
+
+    .img-slider .slide .info{
+        font-size: 25px;
+    }
+
+    .img-slider .navigation{
+        bottom: -25px;
+    }
+
+    .img-slider .position-item{
+        z-index: 2;
+        position: absolute;
+        display: flex;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+
+}
+
 
 
 
