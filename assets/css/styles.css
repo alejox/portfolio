@@ -421,9 +421,7 @@ hr{
     cursor: pointer;
 }
 
-.social-buttons img:hover{
-    border-color: var(--third-color);
-}
+
 /*---------------------------Jquery-------------------------------*/
 
 
