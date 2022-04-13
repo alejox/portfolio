@@ -367,8 +367,63 @@ main .profile-img{
     -o-transform: translateX(-50%);
 }
 
+/*-------------------- Project ---------------------------*/
+
+.projects{
+    margin: 50px auto;
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.project-card{
+    margin: 25px 0;
+}
+
+.project-img img{
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.project-img .text-project{
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+/*-------------------- Contact ---------------------------*/
+
+.contact-button{
+    display: flex;
+}
 
 
+/*-------------------- Footer ---------------------------*/
+
+hr{
+    border: var(--text-color) solid 1px;
+}
+
+.social-buttons-container{
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.social-buttons{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.social-buttons img:hover{
+    border-color: var(--third-color);
+}
 /*---------------------------Jquery-------------------------------*/
 
 
@@ -470,6 +525,7 @@ main .profile-img{
         margin: 6px;
     }
 
+
 }
 
 @media (max-width:420px){
@@ -510,6 +566,26 @@ main .profile-img{
 
 
 @media only screen and (min-width: 600px){
+
+    .projects{
+        margin: 50px auto;
+        width: 90%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        max-width: 800px;
+    }
+
+    .project-img .text-project{
+        color: var(--text-color);
+        font-size: 1.4rem;
+        font-weight: 100;
+    }
+
+    .project-card{
+        margin: 0 20px;
+    }
 
     nav > ul > li > a{
         color: var(--title-color);
