@@ -379,7 +379,7 @@ main .profile-img{
 }
 
 .project-card{
-    margin: 25px 0;
+    margin: 20px 0;
 }
 
 
@@ -396,6 +396,7 @@ main .profile-img{
     color: var(--text-color);
     font-size: 1.2rem;
     font-weight: 100;
+    width: 100%;
 }
 
 /*-------------------- Contact ---------------------------*/
@@ -572,7 +573,6 @@ hr{
         justify-content: space-between;
         display: flex;
         flex-direction: row;
-        text-align: left;
         max-width: 800px;
     }
 
@@ -583,6 +583,7 @@ hr{
     }
 
     .project-card{
+        display: flex;
         margin: 0 20px;
     }
 
