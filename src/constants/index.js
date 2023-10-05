@@ -221,9 +221,9 @@ const projects = [
     web_link: "https://brokermfx.com/#/",
   },
   {
-    name: "Judovi - Alejandro",
+    name: "Judovi",
     description:
-      "Portfolio under construction for graphic designer and video editor",
+      "Portfolio under construction for graphic designer and video editor - Alejandro",
     tags: [
       {
         name: "HTML",
