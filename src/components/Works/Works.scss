@@ -1,0 +1,64 @@
+@import "../../styles/variables";
+
+.works {
+  display: grid;
+  gap: 90px;
+  &__text {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 90px;
+  }
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  &__info {
+    &--right {
+      text-align: right;
+      h2 {
+        color: $secondary;
+        text-align: right;
+      }
+    }
+    &--left {
+      text-align: left;
+      h2 {
+        color: $secondary;
+        text-align: left;
+      }
+    }
+  }
+  &__description {
+    font-size: 1.5rem;
+    span {
+      color: $secondary;
+    }
+  }
+  .red {
+    color: $tertiary;
+  }
+  .purple {
+    color: $primary;
+  }
+  .green {
+    color: $green;
+  }
+  .btn {
+    margin-top: 2rem;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  img {
+    &:hover {
+      filter: brightness(60%);
+      -webkit-filter: brightness(60%);
+    }
+  }
+}

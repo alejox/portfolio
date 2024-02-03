@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+
+.work {
+  display: grid;
+  gap: 90px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+
+  &__subtitle {
+    color: $secondary;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+  &__info {
+    max-width: 600px;
+  }
+
+  &__lottie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__eos {
+    line-height: 3rem;
+    font-size: 1.5rem;
+  }
+
+  &__text {
+    font-size: 1rem;
+    font-weight: 400;
+    span {
+      color: $tertiary;
+      font-weight: 600;
+    }
+  }
+  &__date {
+    font-size: 1.25rem;
+    line-height: 3rem;
+    color: $primary;
+    font-weight: 500;
+  }
+}

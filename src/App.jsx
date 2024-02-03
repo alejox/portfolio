@@ -1,37 +1,20 @@
-import { BrowserRouter } from "react-router-dom";
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import NavBar from './components/NavBar/NavBar';
+import Technologies from './components/Tecnologies/Technologies';
+import WorkExperience from './components/WorkExperience/WorkExperience';
+import Works from './components/Works/Works';
+import './styles/styles.scss'
 
-import {
-  About,
-  Contact,
-  Experience,
-  Feedbacks,
-  Hero,
-  Navbar,
-  Tech,
-  Works,
-  StarsCanvas,
-} from "./components";
-
-const App = () => {
-  return (
-    <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        {/* <Feedbacks /> */}
-        <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
-        </div>
-      </div>
-    </BrowserRouter>
-  );
-};
+function App() {
+  return <main className='main'>
+    <NavBar/>
+    <Header/>
+    <WorkExperience/>
+    <Works/>
+    <Technologies/>
+    <Footer/>
+  </main>;
+}
 
 export default App;

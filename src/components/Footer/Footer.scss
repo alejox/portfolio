@@ -1,0 +1,56 @@
+@import "../../styles/variables";
+
+.footer {
+  display: grid;
+  gap: 90px;
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    gap: 90px;
+    color: #fff;
+    background: transparent
+      linear-gradient(296deg, $primary 0%, $secondary 100%);
+    padding: 2rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    display: grid;
+    gap: 1.5rem;
+  }
+  &__inputs {
+    display: grid;
+    gap: 1rem;
+  }
+  &__field {
+    display: grid;
+    label {
+      font-size: 14px;
+      font-weight: 300;
+    }
+    input,
+    textarea {
+      padding: 12px;
+      border: none;
+      color: #3a3838;
+      font-size: 14px;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+    }
+  }
+  &__error{
+    margin-top: 4px;
+    font-size: 1rem;
+    color:$tertiary;
+    font-weight: 400;
+  }
+  .btn{
+    width: 100%;
+  }
+}
