@@ -45,7 +45,7 @@ const Footer = () => {
           <div className="footer__field">
             <label htmlFor="email">Email</label>
             <input
-              placeholder="¿Cual es tu correo?"
+              placeholder="¿Cuál es tu correo?"
               id="email"
               type="email"
               name="user_email"
@@ -56,7 +56,7 @@ const Footer = () => {
             <textarea
               id="message"
               name="message"
-              placeholder="¿Cual es tu mensaje?"
+              placeholder="¿Cuál es tu mensaje?"
             />
           </div>
           <input className="btn" type="submit" value="Send" />
