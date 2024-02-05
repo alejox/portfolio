@@ -4,7 +4,7 @@ import Lottie from "lottie-react";
 
 const WorkExperience = () => {
   return (
-    <div className="work">
+    <div className="work" id="experience">
       <h2>EXPERIENCIA LABORAL</h2>
       <div className="work__grid">
         <div className="work__info">

@@ -18,10 +18,10 @@ const NavBar = () => {
         <p>DESARROLLADOR FRONTEND</p>
       </div>
       <nav ref={navRef}>
-        <a href="/#">INICIO</a>
-        <a href="/#">EXPERIENCIA LABORAL</a>
-        <a href="/#">TRABAJOS</a>
-        <a href="#/">CONTACTO</a>
+        <a href="/#home">INICIO</a>
+        <a href="/#experience">EXPERIENCIA LABORAL</a>
+        <a href="/#works">TRABAJOS</a>
+        <a href="/#contact">CONTACTO</a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <img src={close} alt="" />
         </button>

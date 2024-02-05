@@ -28,7 +28,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="footer">
+    <footer className="footer" id="contact">
       <h2>CONTACTO</h2>
 
       <form className="footer__content" ref={form} onSubmit={sendEmail}>

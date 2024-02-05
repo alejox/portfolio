@@ -4,7 +4,7 @@ import profile from "../../assets/profile.webp";
 
 const home = () => {
   return (
-    <section className="home">
+    <section className="home" id="home">
       <section className="home__box">
         <article className="home__info">
           <h3 className="home__title">Hola, soy Alejandro </h3>

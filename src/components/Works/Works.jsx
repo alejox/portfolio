@@ -6,7 +6,7 @@ import judovi from "../../assets/JUDOVI.png";
 
 const Works = () => {
   return (
-    <div className="works">
+    <div className="works" id="works">
       <h2>TRABAJOS</h2>
       <p className="works__text">
         Los siguientes proyectos muestran mis habilidades y experiencia a través
