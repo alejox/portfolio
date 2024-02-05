@@ -1,11 +1,11 @@
 {
   "name": "portfolio",
   "private": true,
-  "homepage":"http://alejox.github.io/portfolio/",
+  "homepage":"https://alejoxcode.com",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy":"npm run build && echo 'alejoxcode.com' > ./dist/CNAME",
+    "predeploy":"npm run build && echo alejoxcode.com > ./dist/CNAME",
     "deploy":"gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
