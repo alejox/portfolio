@@ -1,21 +1,36 @@
-import './NavBar.scss';
-import Logo from '../icons/logo';
-
+import { useRef } from "react";
+import "./NavBar.scss";
+import Logo from "../icons/logo";
+import close from "../icons/close.svg";
+import menubar from "../icons/menu-hamburguesa.svg";
 
 const NavBar = () => {
+  const navRef = useRef();
+
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
   return (
-    <nav className="navbar">
-      <div className='navbar__brand'>
-        <Logo width={44}/>
+    <header className="navbar" ref={navRef}>
+      <div className="navbar__brand">
+        <Logo width={44} />
         <p>DESARROLLADOR FRONTEND</p>
       </div>
-      <ul className="list">
-        <li className="list__item">INICIO</li>
-        <li className="list__item">EXPERIENCIA</li>
-        <li className="list__item">TRABAJOS</li>
-      </ul>
-      <button className="btn">Contacto</button>
-    </nav>
+      <nav>
+        <a href="/#">INICIO</a>
+        <a href="/#">EXPERIENCIA LABORAL</a>
+        <a href="/#">TRABAJOS</a>
+        <a href="#/" className="btn">
+          Contacto
+        </a>
+        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+          <img src={close} alt="" />
+        </button>
+      </nav>
+      <button className="nav-btn" onClick={showNavbar}>
+        <img src={menubar} alt="" />
+      </button>
+    </header>
   );
 };
 

@@ -1,5 +1,5 @@
 import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
+import Home from './components/Home/Home';
 import NavBar from './components/NavBar/NavBar';
 import Technologies from './components/Tecnologies/Technologies';
 import WorkExperience from './components/WorkExperience/WorkExperience';
@@ -9,7 +9,7 @@ import './styles/styles.scss'
 function App() {
   return <main className='main'>
     <NavBar/>
-    <Header/>
+    <Home/>
     <WorkExperience/>
     <Works/>
     <Technologies/>

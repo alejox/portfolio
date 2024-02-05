@@ -1,0 +1,81 @@
+@import "../../styles/variables";
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  @media (max-width: 1440px) {
+  }
+  @media (max-width: 720px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 240px;
+  }
+
+  &__title {
+    font-size: 3rem;
+    color: $primary;
+    font-weight: 400;
+    @media (max-width: 440px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 3rem;
+    color: $secondary;
+    font-weight: 800;
+    @media (max-width: 440px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    @media (max-width: 440px) {
+      font-size: 1rem;
+    }
+  
+  }
+
+  &__img {
+    width: 280px;
+    margin-left: auto;
+    border-radius: 2rem;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+    &:hover {
+      scale: 1.1;
+      transition: all 300ms;
+      -webkit-transition: all 300ms;
+      -moz-transition: all 300ms;
+      -ms-transition: all 300ms;
+      -o-transition: all 300ms;
+      transform: perspective(550px) rotateY(-10deg) rotateX(-3deg);
+      -webkit-transform: perspective(550px) rotateY(-10deg) rotateX(-3deg);
+      -moz-transform: perspective(550px) rotateY(-10deg) rotateX(-3deg);
+      -ms-transform: perspective(550px) rotateY(-10deg) rotateX(-3deg);
+      -o-transform: perspective(550px) rotateY(-10deg) rotateX(-3deg);
+    }
+    @media (max-width: 720px) {
+      margin: 0 auto;
+    }
+  }
+  a{
+    text-decoration: none;
+  }
+}

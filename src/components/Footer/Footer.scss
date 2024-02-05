@@ -7,7 +7,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-
     gap: 90px;
     color: #fff;
     background: transparent
@@ -20,6 +19,13 @@
     -o-border-radius: 2rem;
     display: grid;
     gap: 1.5rem;
+    @media (max-width:960px) {
+      grid-template-columns: 1fr;
+    }
+    @media (max-width:440px) {
+      padding: 1rem;
+      
+    }
   }
   &__inputs {
     display: grid;

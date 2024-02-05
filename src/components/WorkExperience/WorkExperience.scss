@@ -3,18 +3,28 @@
 .work {
   display: grid;
   gap: 90px;
-
+  
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
+    @media (max-width: 860px) {
+      gap: 30px;
+    }
+    @media (max-width: 680px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__subtitle {
     color: $secondary;
     font-weight: 500;
     font-size: 1.5rem;
-    line-height: 3rem;
+    line-height: 2rem;
+    @media (max-width: 440px) {
+      font-size: 1rem;
+      line-height: 2rem;
+    }
   }
 
   &__info {
