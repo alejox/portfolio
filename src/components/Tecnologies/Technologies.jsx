@@ -3,7 +3,7 @@ import html from "../../assets/html.png";
 import css from "../../assets/css.png";
 import js from "../../assets/js.png";
 import react from "../../assets/react.png";
-import vue from "../../assets/vue.png";
+import vue from "../../assets/Vue.png";
 import sass from "../../assets/sass.png";
 import vueb from "../../assets/vueb.png";
 import vuetify from "../../assets/vuetify.svg";
