@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+
+.scroll {
+  .btnTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: transparent
+      linear-gradient(296deg, $primary 0%, $secondary 100%);
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    &:hover {
+      filter: brightness(110%);
+      -webkit-filter: brightness(110%);
+      scale: 1.04;
+      transition: ease-in-out 200ms;
+      -webkit-transition: ease-in-out 200ms;
+      -moz-transition: ease-in-out 200ms;
+      -ms-transition: ease-in-out 200ms;
+      -o-transition: ease-in-out 200ms;
+    }
+  }
+}

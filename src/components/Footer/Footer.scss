@@ -3,7 +3,7 @@
 .footer {
   display: grid;
   gap: 90px;
-  z-index: -1 ;
+  z-index: -1;
   &__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -20,12 +20,11 @@
     -o-border-radius: 2rem;
     display: grid;
     gap: 1.5rem;
-    @media (max-width:960px) {
+    @media (max-width: 960px) {
       grid-template-columns: 1fr;
     }
-    @media (max-width:440px) {
+    @media (max-width: 440px) {
       padding: 1rem;
-      
     }
   }
   &__inputs {
@@ -51,14 +50,36 @@
       -o-border-radius: 8px;
     }
   }
-  &__error{
+  &__error {
     margin-top: 4px;
     font-size: 1rem;
-    color:$tertiary;
+    color: $tertiary;
     font-weight: 400;
   }
-  .btn{
+  .btn {
     width: 100%;
   }
- 
+  &__left {
+    display: grid;
+    gap: 1rem;
+  }
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 24px;
+    a {
+      text-decoration: none;
+      color: #63318a;
+      &:hover{
+        cursor: pointer;
+
+      }
+    }
+  }
+  &__social {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
 }

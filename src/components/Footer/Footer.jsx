@@ -3,7 +3,10 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import contact from "../../lotties/contact.json";
 import Lottie from "lottie-react";
-
+import Logo from "../icons/Logo";
+import whatsapp from "../icons/whatsapp.svg";
+import github from "../icons/github.svg";
+import email from "../icons/email.svg";
 const Footer = () => {
   const form = useRef();
 
@@ -19,7 +22,7 @@ const Footer = () => {
         () => {
           console.log("SUCCESS!");
           form.current.reset();
-          alert('Mensaje enviado correctamente')
+          alert("Mensaje enviado correctamente");
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -66,6 +69,23 @@ const Footer = () => {
           <Lottie animationData={contact} />
         </div>
       </form>
+      <section className="footer__info">
+        <div className="footer__left">
+          <div className="footer__social">
+            <img width={26} src={whatsapp} alt="" />
+            <a href="tel:+573112329185">+57 311 232 9185</a>
+          </div>
+          <div className="footer__social">
+            <img width={26} src={email} alt="" />
+            <a href="mailto:alejoxcode@gmail.com">alejoxcode@gmail.com</a>
+          </div>
+          <div className="footer__social">
+            <img width={26} src={github} alt="" />
+            <a href="https://github.com/alejox" rel="noreferrer" target="_blank">/alejox</a>
+          </div>
+        </div>
+        <Logo width={40} />
+      </section>
     </footer>
   );
 };
