@@ -26,8 +26,9 @@ const NavBar = () => {
           <img src={close} alt="" />
         </button>
       </nav>
-      <button className="nav-btn" onClick={showNavbar}><img src={menubar} alt="" /></button>
-
+      <button className="nav-btn" onClick={showNavbar}>
+        <img src={menubar} alt="" />
+      </button>
       <a
         className="cv"
         href="CVAlejandroGrajales.pdf"
