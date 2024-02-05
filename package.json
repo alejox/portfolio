@@ -1,10 +1,10 @@
 {
   "name": "portfolio",
   "private": true,
-  "homepage":"https://alejoxcode.com/",
+  "homepage":"http://alejoxcode.com/",
   "version": "0.0.0",
   "type": "module",
-  
+
   "scripts": {
     "predeploy":"npm run build",
     "deploy":"gh-pages -d dist",
