@@ -71,7 +71,7 @@ const Works = () => {
           </a>
         </article>
         {/* Work Item */}
-        <article className="works__item">
+        <article className="works__item works__item--reverse">
           <a href="https://brokermfx.com/#/" rel="noreferrer" target="_Blank">
             <img src={mfx} alt="" />
           </a>

@@ -24,6 +24,10 @@
       gap: 2rem;
       
     }
+    &--reverse{
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
   &__info {
     &--right {
