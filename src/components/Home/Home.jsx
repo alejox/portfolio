@@ -1,4 +1,5 @@
 import "./Home.scss";
+
 import profile from "../../assets/profile.webp";
 
 const home = () => {
