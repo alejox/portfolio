@@ -3,7 +3,7 @@
 .work {
   display: grid;
   gap: 90px;
-  
+  z-index: -1 ;
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;

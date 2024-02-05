@@ -3,6 +3,7 @@
 .footer {
   display: grid;
   gap: 90px;
+  z-index: -1 ;
   &__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -59,4 +60,5 @@
   .btn{
     width: 100%;
   }
+ 
 }
