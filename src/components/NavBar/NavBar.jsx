@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import "./NavBar.scss";
-import Logo from "../icons/logo";
+import Logo from "../icons/Logo";
 import close from "../icons/close.svg";
 import menubar from "../icons/menu-hamburguesa.svg";
 import cv from "../icons/cv.svg";
