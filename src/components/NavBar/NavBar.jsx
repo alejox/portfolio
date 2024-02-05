@@ -3,6 +3,7 @@ import "./NavBar.scss";
 import Logo from "../icons/logo";
 import close from "../icons/close.svg";
 import menubar from "../icons/menu-hamburguesa.svg";
+import cv from "../icons/cv.svg";
 
 const NavBar = () => {
   const navRef = useRef();
@@ -11,25 +12,32 @@ const NavBar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
   return (
-    <header className="navbar" ref={navRef}>
-      <div className="navbar__brand">
+    <header>
+      <div>
         <Logo width={44} />
         <p>DESARROLLADOR FRONTEND</p>
       </div>
-      <nav>
+      <nav ref={navRef}>
         <a href="/#">INICIO</a>
         <a href="/#">EXPERIENCIA LABORAL</a>
         <a href="/#">TRABAJOS</a>
-        <a href="#/" className="btn">
-          Contacto
-        </a>
+        <a href="#/">CONTACTO</a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <img src={close} alt="" />
         </button>
       </nav>
-      <button className="nav-btn" onClick={showNavbar}>
-        <img src={menubar} alt="" />
-      </button>
+      <button className="nav-btn" onClick={showNavbar}><img src={menubar} alt="" /></button>
+
+      <a
+        className="cv"
+        href="CVAlejandroGrajales.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        download="CVAlejandroGrajales.pdf"
+        title="Descarga mi hoja de vida"
+      >
+        <img width={30} src={cv} alt="" />
+      </a>
     </header>
   );
 };

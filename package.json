@@ -1,5 +1,4 @@
 {
-  "homepage": "https://alejoxcode.com",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
@@ -13,6 +12,8 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.1.0",
+    "emailjs": "^4.0.3",
     "js-file-download": "^0.4.12",
     "lottie-react": "^2.4.0",
     "react": "^18.2.0",
