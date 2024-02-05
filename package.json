@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "homepage":"http://alejox.github.io/alejox",
+  "homepage":"http://alejox.github.io/portfolio",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
