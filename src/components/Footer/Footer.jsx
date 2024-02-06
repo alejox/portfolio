@@ -81,10 +81,19 @@ const Footer = () => {
           </div>
           <div className="footer__social">
             <img width={26} src={github} alt="" />
-            <a href="https://github.com/alejox" rel="noreferrer" target="_blank">/alejox</a>
+            <a
+              href="https://github.com/alejox"
+              rel="noreferrer"
+              target="_blank"
+            >
+              /alejox
+            </a>
           </div>
         </div>
-        <Logo width={40} />
+        <div className="footer__logo">
+          <Logo width={40} />
+          <p className="footer__copy">&copy; 2024 AlejoxCode Derechos reservados</p>
+        </div>
       </section>
     </footer>
   );

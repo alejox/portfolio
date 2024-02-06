@@ -18,7 +18,7 @@ const Works = () => {
 
       <section className="works__grid">
         {/* Work Item */}
-        <article className="works__item">
+        <article className="works__item  works__item--reverse">
           <a href="https://kodexpay.com/" rel="noreferrer" target="_Blank">
             <img src={kodex} alt="" />
           </a>

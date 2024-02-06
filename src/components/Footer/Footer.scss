@@ -3,7 +3,6 @@
 .footer {
   display: grid;
   gap: 90px;
-  z-index: -1;
   &__content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -20,6 +19,7 @@
     -o-border-radius: 2rem;
     display: grid;
     gap: 1.5rem;
+
     @media (max-width: 960px) {
       grid-template-columns: 1fr;
     }
@@ -50,6 +50,9 @@
       -o-border-radius: 8px;
     }
   }
+  &__lottie{
+    
+  }
   &__error {
     margin-top: 4px;
     font-size: 1rem;
@@ -62,12 +65,18 @@
   &__left {
     display: grid;
     gap: 1rem;
+    @media (max-width: 550px) {
+      justify-content: center;
+    }
   }
   &__info {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 24px;
+    @media (max-width: 550px) {
+      grid-template-columns: 1fr;
+    }
     a {
       text-decoration: none;
       color: #63318a;
@@ -81,5 +90,20 @@
     display: flex;
     gap: 12px;
     align-items: center;
+    @media (max-width: 550px) {
+      flex-direction: column;
+    }
+  }
+  &__logo{
+    display: grid;
+    justify-items: end;
+    gap: 1rem;
+    @media (max-width: 550px) {
+      justify-items: center;
+    }
+  }
+  &__copy{
+    text-align: center;
+    font-size: 14px;
   }
 }

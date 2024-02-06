@@ -24,10 +24,10 @@
       grid-template-columns: 1fr;
       gap: 2rem;
       
-    }
-    &--reverse{
-      display: flex;
-      flex-direction: column-reverse;
+      &--reverse{
+        display: flex;
+        flex-direction: column-reverse;
+      }
     }
   }
   &__info {
