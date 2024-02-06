@@ -8,6 +8,7 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 90px;
+
     color: #fff;
     background: transparent
       linear-gradient(296deg, $primary 0%, $secondary 100%);
@@ -50,8 +51,7 @@
       -o-border-radius: 8px;
     }
   }
-  &__lottie{
-    
+  &__lottie {
   }
   &__error {
     margin-top: 4px;
@@ -80,9 +80,8 @@
     a {
       text-decoration: none;
       color: #63318a;
-      &:hover{
+      &:hover {
         cursor: pointer;
-
       }
     }
   }
@@ -94,7 +93,7 @@
       flex-direction: column;
     }
   }
-  &__logo{
+  &__logo {
     display: grid;
     justify-items: end;
     gap: 1rem;
@@ -102,7 +101,7 @@
       justify-items: center;
     }
   }
-  &__copy{
+  &__copy {
     text-align: center;
     font-size: 14px;
   }
